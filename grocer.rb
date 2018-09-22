@@ -48,5 +48,5 @@ def checkout(cart, coupons)
     cart_total += (pricing_info[:price] * pricing_info[:count])
   end
   cart_total
-    
+  binding.pry
 end
