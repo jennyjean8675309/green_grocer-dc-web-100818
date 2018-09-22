@@ -42,10 +42,7 @@ end
 def checkout(cart, coupons)
   consolidated_cart = consolidate_cart(cart)
   couponed_cart = apply_coupons(consolidated_cart, coupons)
-  check_for_clearance_cart = apply_clearance(cart)
-  cart_total = []
-  cart.collect do |item, pricing_info|
-    pricing_info[:price] * pricing_info[:count]
-  end
+  final_cart = apply_clearance(couponed_card)
+  cart_total = nil
   binding.pry
 end
