@@ -41,7 +41,7 @@ end
 
 def checkout(cart, coupons)
   consolidated_cart = consolidate_cart(cart)
-  apply_coupons(cart, coupons)
+  apply_coupons(consolidated_cart, coupons)
   apply_clearance(cart)
   cart_total = []
   cart.collect do |item, pricing_info|
