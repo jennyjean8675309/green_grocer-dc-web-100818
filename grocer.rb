@@ -47,4 +47,5 @@ def checkout(cart, coupons)
   cart.collect do |item, pricing_info|
     pricing_info[:price] * pricing_info[:count]
   end
+  binding.pry
 end
