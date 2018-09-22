@@ -52,6 +52,5 @@ def checkout(cart, coupons)
     cart_discount = cart_total * 0.1
     cart_total = cart_total - cart_discount
   end
-  
-  binding.pry
+  cart_total
 end
